@@ -161,3 +161,104 @@ body {
 }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
+
+/* ======================
+   Contenido
+====================== */
+.content {
+  display: grid;
+  gap: 24px;
+}
+.page-header .subtitle { color: var(--color-text-muted); }
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+.card__body { padding: 16px; }
+.card__footer {
+  padding: 12px 16px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+}
+
+/* Valores destacados */
+.stat-card__value {
+  font-size: 28px;
+  font-weight: 700;
+}
+.stat-card__desc { color: var(--color-text-muted); }
+
+/* Workouts */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.workouts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.workout-card .icon { width: 22px; height: 22px; margin-right: 8px; }
+.workout-card__title {
+  display: flex; align-items: center; gap: 8px;
+}
+.workout-card__list {
+  margin: 0; padding-left: 18px;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.badge--success { background: #133a28; color: var(--success); border: 1px solid var(--success); }
+.badge--warning { background: #3b3012; color: var(--warning); border: 1px solid var(--warning); }
+.badge--info    { background: #113141; color: var(--info);    border: 1px solid var(--info); }
+
+/* Progreso */
+.progress {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.progress__bar {
+  height: 12px;
+  background: var(--color-surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+.progress__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--primary-600));
+  border-radius: 999px;
+}
+.progress__text {
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+
