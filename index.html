@@ -1,0 +1,197 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitTracker — Workout Management</title>
+  <meta name="description" content="UI FitTracker: gestión de entrenamientos" />
+
+  <!-- Tipografía: ajustaremos luego a la del Figma si nos dices cuál es -->
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  <!-- Ejemplo con Inter; cámbiala luego si el Figma indica otra -->
+  https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap
+
+  styles/style.css
+</head>
+<body>
+  <header class="app-header">
+    <nav class="topbar container">
+      <div class="brand">
+        assets/icons/dumbbell.svg
+        <span class="brand__name">FitTracker</span>
+      </div>
+
+      <form class="search">
+        <input type="search" placeholder="Buscar rutinas, ejercicios..." aria-label="Buscar" />
+      </form>
+
+      <div class="user">
+        assets/images/avatar.png
+        <div class="user__meta">
+          <span class="user__name">Maicol Posada</span>
+          <span class="user__role">Athlete</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="layout container">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <nav>
+        <ul class="menu">
+          <li class="menu__item menu__item--active">#Dashboard</a></li>
+          <li class="menu__item">#Rutinas</a></li>
+          <li class="menu__item">#Ejercicios</a></li>
+          <li class="menu__item">#Progreso</a></li>
+          <li class="menu__item">#Configuración</a></li>
+        </ul>
+      </nav>
+
+      <section class="quick-actions">
+        <h2 class="section-title">Acciones rápidas</h2>
+        <div class="actions">
+          #Nueva rutina</a>
+          #Registrar entrenamiento</a>
+        </div>
+      </section>
+    </aside>
+
+    <main class="content" role="main">
+      <section class="page-header">
+        <h1>Dashboard</h1>
+        <p class="subtitle">Resumen de tus entrenamientos y objetivos semanales</p>
+      </section>
+
+      <section class="stats-grid">
+        <article class="card stat-card">
+          <header class="card__header">
+            <h3>Entrenamientos semana</h3>
+          </header>
+          <div class="card__body">
+            <p class="stat-card__value">5</p>
+            <p class="stat-card__desc">Meta: 4</p>
+          </div>
+        </article>
+
+        <article class="card stat-card">
+          <header class="card__header">
+            <h3>Tiempo total</h3>
+          </header>
+          <div class="card__body">
+            <p class="stat-card__value">4h 20m</p>
+            <p class="stat-card__desc">+15% vs semana pasada</p>
+          </div>
+        </article>
+
+        <article class="card stat-card">
+          <header class="card__header">
+            <h3>Volumen (kg)</h3>
+          </header>
+          <div class="card__body">
+            <p class="stat-card__value">12.4k</p>
+            <p class="stat-card__desc">Press, sentadilla, peso muerto</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="workouts">
+        <header class="section-header">
+          <h2>Últimos entrenamientos</h2>
+          #Ver todos</a>
+        </header>
+
+        <div class="workouts-grid">
+          <!-- Tarjeta 1 -->
+          <article class="card workout-card">
+            <header class="card__header">
+              <div class="workout-card__title">
+                assets/icons/strength.svg
+                <h3>Fuerza — Full Body</h3>
+              </div>
+              <span class="badge badge--success">Completado</span>
+            </header>
+            <div class="card__body">
+              <ul class="workout-card__list">
+                <li>Sentadilla — 5x5</li>
+                <li>Press banca — 5x5</li>
+                <li>Peso muerto — 3x5</li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <span class="meta">Duración: 75m</span>
+              <span class="meta">Fecha: 30 Nov</span>
+            </footer>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="card workout-card">
+            <header class="card__header">
+              <div class="workout-card__title">
+                assets/icons/cardio.svg
+                <h3>Cardio — HIIT</h3>
+              </div>
+              <span class="badge badge--warning">Pendiente</span>
+            </header>
+            <div class="card__body">
+              <ul class="workout-card__list">
+                <li>Sprints 10x30s</li>
+                <li>Saltos caja 4x10</li>
+                <li>Burpees 3x15</li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <span class="meta">Duración estimada: 40m</span>
+              <span class="meta">Programado: 03 Dic</span>
+            </footer>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="card workout-card">
+            <header class="card__header">
+              <div class="workout-card__title">
+                assets/icons/mobility.svg
+                <h3>Movilidad — Core & Stretch</h3>
+              </div>
+              <span class="badge badge--info">En progreso</span>
+            </header>
+            <div class="card__body">
+              <ul class="workout-card__list">
+                <li>Plancha — 3x60s</li>
+                <li>Puente — 3x15</li>
+                <li>Estiramientos — 20m</li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <span class="meta">Duración: 30m</span>
+              <span class="meta">Fecha: 01 Dic</span>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <section class="progress">
+        <header class="section-header">
+          <h2>Progreso semanal</h2>
+        </header>
+        <div class="progress__bar" aria-label="Progreso semanal 70%">
+          <div class="progress__fill" style="width:70%"></div>
+        </div>
+        <p class="progress__text">Has cumplido el 70% de tu objetivo semanal.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="app-footer">
+    <div class="container footer__content">
+      <small>© 2025 FitTracker — Construido para práctica de maquetación</small>
+      <nav aria-label="Enlaces de soporte">
+        #Soporte</a>
+        #Privacidad</a>
+        #Términos</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
