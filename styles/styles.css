@@ -262,3 +262,36 @@ body {
   margin-top: 8px;
 }
 
+
+/* ======================
+   Footer
+====================== */
+.app-footer {
+  border-top: 1px solid var(--color-border);
+  background: rgba(20, 26, 47, 0.75);
+}
+.footer__content {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ======================
+   Responsive
+====================== */
+@media (max-width: 1024px) {
+  .topbar { grid-template-columns: 180px 1fr 180px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .workouts-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { order: 2; }
+  .content { order: 1; }
+  .topbar { grid-template-columns: 1fr; gap: 10px; }
+  .user { justify-self: start; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .workouts-grid { grid-template-columns: 1fr; }
+}
