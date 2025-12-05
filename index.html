@@ -22,13 +22,26 @@
         <span class="brand__name">FitTracker</span>
       </div>
 
-      <form class="search">
+      <form class="search" role="search">
+        <input type="search" placeholder="Buscar rutinas, ejercicios..." aria-label="Buscar">
         <img src="assets/icons/search.svg" class="search__icon" alt="Buscar">
-        <input type="search" placeholder="Buscar rutinas, ejercicios...">
       </form>
 
       <div class="user">
-        <img src="assets/images/avatar-user.png" class="user__avatar" alt="Usuario">
+        <!-- Avatar inline SVG -->
+        <svg class="user__avatar" width="42" height="42" viewBox="0 0 64 64">
+          <defs>
+            <radialGradient id="g1" cx="30%" cy="25%" r="80%">
+              <stop offset="0%" stop-color="#9ff6ff"/>
+              <stop offset="60%" stop-color="#6c8cff"/>
+              <stop offset="100%" stop-color="#3b2a8a"/>
+            </radialGradient>
+          </defs>
+          <circle cx="32" cy="32" r="30" fill="url(#g1)" opacity="0.3" />
+          <circle cx="32" cy="24" r="8" fill="#6cf0ff"/>
+          <path d="M20 44c0-6 7-8 12-8s12 2 12 8" fill="#6cf0ff" opacity="0.3"/>
+        </svg>
+
         <div class="user__meta">
           <span class="user__name">Maicol Posada</span>
           <span class="user__role">Atleta</span>
@@ -58,4 +71,79 @@
         <div class="actions">
           <a href="#" class="btn btn--primary">Nueva rutina</a>
           <a href="#" class="btn btn--secondary">Registrar entrenamiento</a>
+        </div>
+      </section>
+    </aside>
 
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+
+      <section class="page-header">
+        <h1>Dashboard</h1>
+        <p class="subtitle">Resumen de tus entrenamientos y rendimiento semanal</p>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-grid">
+        <article class="card stat-card">
+          <header class="card__header"><h3>Entrenamientos esta semana</h3></header>
+          <div class="card__body">
+            <p class="stat-card__value">5</p>
+            <p class="stat-card__desc">Meta: 4</p>
+          </div>
+        </article>
+
+        <article class="card stat-card">
+          <header class="card__header"><h3>Tiempo total</h3></header>
+          <div class="card__body">
+            <p class="stat-card__value">4h 20m</p>
+            <p class="stat-card__desc">+15% vs semana pasada</p>
+          </div>
+        </article>
+
+        <article class="card stat-card">
+          <header class="card__header"><h3>Volumen (kg)</h3></header>
+          <div class="card__body">
+            <p class="stat-card__value">12.4k</p>
+            <p class="stat-card__desc">Press banca, sentadilla, peso muerto</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- WORKOUTS -->
+      <section class="workouts">
+        <header class="section-header">
+          <h2>Últimos entrenamientos</h2>
+          <a href="#" class="link">Ver todos</a>
+        </header>
+
+        <div class="workouts-grid">
+          <article class="card workout-card">
+            <header class="card__header">
+              <div class="workout-card__title">
+                <h3>Full Body — Fuerza</h3>
+              </div>
+              <span class="badge badge--success">Completado</span>
+            </header>
+
+            <div class="card__body">
+              <ul class="workout-card__list">
+                <li>Sentadilla — 5×5</li>
+                <li>Press banca — 5×5</li>
+                <li>Peso muerto — 3×5</li>
+              </ul>
+            </div>
+
+            <footer class="card__footer">
+              <span>Hace 2 días</span>
+              <span>Duración: 1h 05m</span>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+</body>
+</html>

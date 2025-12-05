@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitTracker — Progreso</title>
+
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER COMPLETO (BUSCADOR + AVATAR SVG) -->
+<header class="app-header">
+  <nav class="topbar container">
+
+    <!-- Brand -->
+    <div class="brand">
+      <img src="../assets/icons/logo.svg" alt="Logo FitTracker" class="brand__icon">
+      <span class="brand__name">FitTracker</span>
+    </div>
+
+    <!-- SEARCH (EL MISMO DE INDEX) -->
+    <form class="search" role="search">
+      <input type="search" placeholder="Buscar rutinas, ejercicios..." aria-label="Buscar">
+      <img src="../assets/icons/search.svg" class="search__icon" alt="Buscar">
+    </form>
+
+    <!-- AVATAR SVG (EL MISMO DE INDEX) -->
+    <div class="user">
+
+      <svg class="user__avatar" width="42" height="42" viewBox="0 0 64 64">
+        <defs>
+          <radialGradient id="g1" cx="30%" cy="25%" r="80%">
+            <stop offset="0%" stop-color="#9ff6ff"/>
+            <stop offset="60%" stop-color="#6c8cff"/>
+            <stop offset="100%" stop-color="#3b2a8a"/>
+          </radialGradient>
+        </defs>
+
+        <circle cx="32" cy="32" r="30" fill="url(#g1)" opacity="0.3" />
+        <circle cx="32" cy="24" r="8" fill="#6cf0ff"/>
+        <path d="M20 44c0-6 7-8 12-8s12 2 12 8" fill="#6cf0ff" opacity="0.3"/>
+      </svg>
+
+      <div class="user__meta">
+        <span class="user__name">Maicol Posada</span>
+        <span class="user__role">Atleta</span>
+      </div>
+
+    </div>
+
+  </nav>
+</header>
+
+<!-- LAYOUT -->
+<div class="layout container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <ul class="menu">
+      <li class="menu__item"><a href="../index.html">Dashboard</a></li>
+      <li class="menu__item"><a href="rutinas.html">Rutinas</a></li>
+      <li class="menu__item"><a href="ejercicios.html">Ejercicios</a></li>
+      <li class="menu__item menu__item--active"><a href="progreso.html">Progreso</a></li>
+      <li class="menu__item"><a href="configuracion.html">Configuración</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <section class="page-header">
+      <h1>Progreso</h1>
+      <p class="subtitle">Tus avances y estadísticas</p>
+    </section>
+
+    <section class="stats-grid">
+
+      <article class="card">
+        <div class="card__body">
+          <h3>Tiempo total entrenado</h3>
+          <p class="stat-card__value">42 h</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__body">
+          <h3>Volumen levantado</h3>
+          <p class="stat-card__value">120.5k kg</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__body">
+          <h3>Entrenamientos completados</h3>
+          <p class="stat-card__value">86</p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+</div>
+
+<footer class="app-footer">
+  <div class="footer__content container">
+    <span>FitTracker © 2025</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

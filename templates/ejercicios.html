@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitTracker — Ejercicios</title>
+
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER UNIFICADO -->
+<header class="app-header">
+  <nav class="topbar container">
+
+    <!-- Brand -->
+    <div class="brand">
+      <img src="../assets/icons/logo.svg" alt="Logo FitTracker" class="brand__icon">
+      <span class="brand__name">FitTracker</span>
+    </div>
+
+    <!-- Search -->
+    <form class="search" role="search">
+      <input type="search" placeholder="Buscar ejercicio..." aria-label="Buscar ejercicio">
+      <img src="../assets/icons/search.svg" class="search__icon" alt="Buscar">
+    </form>
+
+    <!-- Avatar SVG -->
+    <div class="user">
+      <svg class="user__avatar" width="42" height="42" viewBox="0 0 64 64">
+        <defs>
+          <radialGradient id="g1" cx="30%" cy="25%" r="80%">
+            <stop offset="0%" stop-color="#9ff6ff"/>
+            <stop offset="60%" stop-color="#6c8cff"/>
+            <stop offset="100%" stop-color="#3b2a8a"/>
+          </radialGradient>
+        </defs>
+
+        <circle cx="32" cy="32" r="30" fill="url(#g1)" opacity="0.3" />
+        <circle cx="32" cy="24" r="8" fill="#6cf0ff"/>
+        <path d="M20 44c0-6 7-8 12-8s12 2 12 8" fill="#6cf0ff" opacity="0.3"/>
+      </svg>
+
+      <div class="user__meta">
+        <span class="user__name">Maicol Posada</span>
+        <span class="user__role">Atleta</span>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<!-- LAYOUT -->
+<div class="layout container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <ul class="menu">
+      <li class="menu__item"><a href="../index.html">Dashboard</a></li>
+      <li class="menu__item"><a href="rutinas.html">Rutinas</a></li>
+      <li class="menu__item menu__item--active"><a href="ejercicios.html">Ejercicios</a></li>
+      <li class="menu__item"><a href="progreso.html">Progreso</a></li>
+      <li class="menu__item"><a href="configuracion.html">Configuración</a></li>
+    </ul>
+  </aside>
+
+  <!-- Content -->
+  <main class="content">
+
+    <section class="page-header">
+      <h1>Ejercicios</h1>
+      <p class="subtitle">Catálogo de ejercicios</p>
+    </section>
+
+    <!-- Cards de ejercicios -->
+    <section class="stats-grid">
+
+      <article class="card workout-card">
+        <div class="card__body">
+          <h3>Sentadilla</h3>
+          <p>Ejercicio base para piernas y glúteos.</p>
+        </div>
+      </article>
+
+      <article class="card workout-card">
+        <div class="card__body">
+          <h3>Press Banca</h3>
+          <p>Desarrollo de fuerza en el pectoral.</p>
+        </div>
+      </article>
+
+      <article class="card workout-card">
+        <div class="card__body">
+          <h3>Peso Muerto</h3>
+          <p>Ejercicio completo de fuerza posterior.</p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="app-footer">
+  <div class="footer__content container">
+    <span>FitTracker © 2025</span>
+  </div>
+</footer>
+
+</body>
+</html>
