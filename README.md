@@ -136,7 +136,7 @@ Tema oscuro con variables CSS y responsive por media queries.
 
 ## Commits realizados 
  
-![commits](<pantallaso de los commits en git hub.png>)
+![commits](<assets/img/pantallaso de los commits en git hub.png>)
 
 ## Estado del Proyecto
 
