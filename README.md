@@ -126,17 +126,23 @@ Tema oscuro con variables CSS y responsive por media queries.
 ## Checklist de la guía EV09
 
  -Maquetación en HTML5 + CSS3 (sin JS).
+
  -Uso de etiquetas semánticas.
+
  -Layout con Flexbox y Grid.
+
  -Diseño responsive (desktop/tablet/móvil).
+
  -Separación index.html / styles/style.css.
+
  -Capturas en carpeta img/ enlazadas en el README.
+ 
  -Repositorio en GitHub llamado fittracker-ui.
 
 
 ## Commits realizados 
  
-![commits](<assets/img/pantallaso de los commits en git hub.png>)
+![commits](<assets/img/pantallaso commits Git Hub.png>)
 
 ## Estado del Proyecto
 
